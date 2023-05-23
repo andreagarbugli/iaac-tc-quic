@@ -1,0 +1,5 @@
+[submodule "qperf"]
+	url = https://github.com/rbruenig/qperf.git
+[submodule "tc-daemon/qperf"]
+	path = tc-daemon/qperf
+	url = https://github.com/rbruenig/qperf.git

@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-IMAGE_NAME = "generic/ubuntu2004"
+IMAGE_NAME = "generic/ubuntu2204"
 USER = "vagrant"
 
 NETWORK1 = "192.168.10"
@@ -58,10 +58,6 @@ Vagrant.configure("2") do |config|
         # apt-get -y install iptables-persistent
         # iptables-save > /etc/iptables/rules.v4
       SHELL
-    router.vm.provision "shell", privileged: false, 
-        inline: <<-SHELL
-          curl -sSL https://install.python-poetry.org | python3 -
-        SHELL
     # router.vm.provision "ansible" do |ansible|
     #   ansible.playbook = "ansible/playbook.yml"
     #   ansible.extra_vars = {
